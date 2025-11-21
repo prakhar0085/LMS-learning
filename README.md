@@ -82,16 +82,16 @@ Navigate to the backend directory and create a .env file with the following cont
 env
 ```
 PORT=8000
-MONGODB_URL=mongodb+srv://prakhartiwari942_db_user:prakhar12345@cluster0.ylv7sil.mongodb.net/
-JWT_SECRET=ecff9dfeb621b60d7e07e93aa0ff4ac45b42eafdbd77f74122b49330b653b32a
-CLOUDINARY_CLOUD_NAME=ddn1wxkws
-CLOUDINARY_API_KEY=128112961413859
-CLOUDINARY_API_SECRET=4xz2iouzODwgS3SwBEgStW99Axs
-EMAIL=maharaj008587@gmail.com
-EMAIL_PASS=Prabhujii
-RAZORPAY_KEY_ID=rzp_test_RBrzzdFTicR7JF
-RAZORPAY_SECRET=04k5ILFPEw3VL3vMF35utXfM
-GEMINI_API_KEY=AIzaSyB8_y18v0ovPBfLslz1Nk-wr42iBD1ZaxM
+MONGODB_URL=
+JWT_SECRET=
+CLOUDINARY_CLOUD_NAME=
+CLOUDINARY_API_KEY=
+CLOUDINARY_API_SECRET=
+EMAIL=
+EMAIL_PASS=
+RAZORPAY_KEY_ID=
+RAZORPAY_SECRET=
+GEMINI_API_KEY=
 ```
 ### 3. Frontend Configuration
 Navigate to the frontend directory and create a .env file with:
@@ -99,8 +99,8 @@ Navigate to the frontend directory and create a .env file with:
 env
 ```
 VITE_API_URL=http://localhost:8000/api
-VITE_FIREBASE_APIKEY=AIzaSyB07cjHesT-GbEqHQFG1i_4Verc2bbLaWU
-VITE_RAZORPAY_KEY_ID=rzp_test_RBrzzdFTicR7JF
+VITE_FIREBASE_APIKEY=
+VITE_RAZORPAY_KEY_ID=
 ```
 ### 4. Start the Application
 Start Backend Server:
