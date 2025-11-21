@@ -27,7 +27,7 @@
 - 🤖 AI-enhanced search capabilities
 
 ## 🏗️ Architecture
-![Architecture Diagram](Architecture Diagram.png)
+
 ### Backend Stack
 - Runtime: Node.js
 - Framework: Express.js
