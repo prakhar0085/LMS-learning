@@ -27,6 +27,7 @@
 - 🤖 AI-enhanced search capabilities
 
 ## 🏗️ Architecture
+![Architecture_Diagram](Architecture_Diagram.jpg).
 
 ### Backend Stack
 - Runtime: Node.js
