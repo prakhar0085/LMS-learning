@@ -57,76 +57,79 @@ Node.js (v16 or higher)
 MongoDB (local or Atlas account)
 npm or yarn package manager
 
-🚀 Getting Started
-1. Clone the Repository
+🚀 LMS Platform - Getting Started Guide
+Quick Setup Instructions
+Prerequisites
+Node.js (v16 or higher)
+
+MongoDB Atlas account
+
+npm or yarn
+
+1. Clone and Install Dependencies
+
+# Clone the repository
 ```
-git clone https://github.com/yourusername/lms-platform.git
+git clone <your-repository-url>
 cd lms-platform
 ```
-2. Backend Setup
+
+# Install backend dependencies
 ```
 cd backend
 npm install
 ```
-Create a .env file in the backend directory:
 
-env
+# Install frontend dependencies
 ```
-PORT=5000
-MONGODB_URI=your_mongodb_connection_string
-JWT_SECRET=your_jwt_secret_key
-CORS_ORIGIN=http://localhost:5173
-```
-
-# Cloudinary
-```
-CLOUDINARY_CLOUD_NAME=your_cloudinary_name
-CLOUDINARY_API_KEY=your_cloudinary_key
-CLOUDINARY_API_SECRET=your_cloudinary_secret
-```
-
-# Razorpay
-```
-RAZORPAY_KEY_ID=your_razorpay_key
-RAZORPAY_KEY_SECRET=your_razorpay_secret
-```
-
-# Google Gemini AI
-```
-GEMINI_API_KEY=your_gemini_api_key
-```
-
-# Email (Nodemailer)
-```
-EMAIL_HOST=smtp.gmail.com
-EMAIL_PORT=587
-EMAIL_USER=your_email@gmail.com
-EMAIL_PASSWORD=your_email_password
-```
-Start the backend server:
-```
-npm start
-```
-The server will run on http://localhost:5000
-
-3. Frontend Setup
-```
-cd frontend
+cd ../frontend
 npm install
 ```
-Create a .env file in the frontend directory:
+2. Backend Configuration
+Navigate to the backend directory and create a .env file with the following content:
 
 env
 ```
-VITE_API_URL=http://localhost:5000/api
-VITE_FIREBASE_API_KEY=your_firebase_api_key
-VITE_FIREBASE_AUTH_DOMAIN=your_firebase_auth_domain
-VITE_FIREBASE_PROJECT_ID=your_firebase_project_id
-Start the development server:
+PORT=8000
+MONGODB_URL=mongodb+srv://prakhartiwari942_db_user:prakhar12345@cluster0.ylv7sil.mongodb.net/
+JWT_SECRET=ecff9dfeb621b60d7e07e93aa0ff4ac45b42eafdbd77f74122b49330b653b32a
+CLOUDINARY_CLOUD_NAME=ddn1wxkws
+CLOUDINARY_API_KEY=128112961413859
+CLOUDINARY_API_SECRET=4xz2iouzODwgS3SwBEgStW99Axs
+EMAIL=maharaj008587@gmail.com
+EMAIL_PASS=Prabhujii
+RAZORPAY_KEY_ID=rzp_test_RBrzzdFTicR7JF
+RAZORPAY_SECRET=04k5ILFPEw3VL3vMF35utXfM
+GEMINI_API_KEY=AIzaSyB8_y18v0ovPBfLslz1Nk-wr42iBD1ZaxM
 ```
+3. Frontend Configuration
+Navigate to the frontend directory and create a .env file with:
 
+env
+```
+VITE_API_URL=http://localhost:8000/api
+VITE_FIREBASE_APIKEY=AIzaSyB07cjHesT-GbEqHQFG1i_4Verc2bbLaWU
+VITE_RAZORPAY_KEY_ID=rzp_test_RBrzzdFTicR7JF
+```
+4. Start the Application
+Start Backend Server:
 
+```
+cd backend
+npm start
+```
+Backend will run on: http://localhost:8000
+
+Start Frontend Development Server:
+
+```
+cd frontend
 npm run dev
-The app will run on http://localhost:5173
+```
+Frontend will run on: http://localhost:5173
 
+5. Access the Application
+Open your browser and navigate to:
 
+text
+http://localhost:5173
